@@ -1,0 +1,6 @@
+1.update emp set ssalary = 5000 where ssalary<5000;
+2.select * from emp where colname like ’张%‘；
+3.select * from emp where avg(select ssalary from emp where did = 1002);
+4.select eid,enam from emp where 
+	(select dname from dept where(select did from emp where id = '赵四'))
+	inner join select dname from dept where (select did from emp where id = '赵四'));
